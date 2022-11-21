@@ -65,6 +65,7 @@ html {
 }
 
 .sobre {
+    background-color: var(--cor-de-fundo-principal);
     padding-top: 96px;
     display: flex;
     flex-direction: column;
