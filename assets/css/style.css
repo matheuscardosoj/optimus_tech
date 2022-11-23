@@ -3,8 +3,9 @@
     --branco: #FFFFFF;
     --cor-de-fundo-principal: #FFFFFF;
     --cor-de-fundo-secundaria: #F9FAFB;
-    --ciza-escuro: #3A404E;
+    --cinza-claro: #EAECF0;
     --cinza: #667085;
+    --ciza-escuro: #3A404E;
     --cinza-muito-escuro: #101828;
     --vermelho: #8E2424;
     --vermelho-escuro-opaco: rgba(142, 36, 36, 0.05);
@@ -119,7 +120,11 @@ html {
 }
 
 .vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 96px 80px;
+    background-color: var(--cor-de-fundo-principal);
 }
 
 .talentos {
@@ -154,4 +159,47 @@ html {
     margin-top: 64px;
     padding: 0 32px;
     box-sizing: border-box;
+}
+
+.oportunidades {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    width: 70vh;
+    margin-top: 64px;
+}
+
+.oportunidade__titulo {
+    margin-bottom: 32px;
+    font-size: 20px;
+    color: var(--cinza-muito-escuro);
+}
+
+.oportunidade__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.oportunidade__vaga {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 24px 24px 28px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 16px
+}
+
+.vaga__titulo {
+    font-size: 18px;
+    color: var(--cinza-muito-escuro);
+}
+
+.vaga__informacoes {
+    display: flex;
+    column-gap: 24px;
+}
+
+.vaga__informacoes span {
+    color: var(--cinza);
 }
