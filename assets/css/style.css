@@ -9,6 +9,7 @@
     --cinza-muito-escuro: #101828;
     --vermelho: #8E2424;
     --vermelho-escuro-opaco: rgba(142, 36, 36, 0.05);
+    --vermelho-muito-opaco: rgba(196, 25, 25, 0.03);;
 }
 
 html {
@@ -123,7 +124,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 80px;
+    padding: 96px 80px 0;
     background-color: var(--cor-de-fundo-principal);
 }
 
@@ -202,4 +203,43 @@ html {
 
 .vaga__informacoes span {
     color: var(--cinza);
+}
+
+.depoimentos {
+    margin: 96px 112px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--vermelho-muito-opaco);
+    row-gap: 32px;
+}
+
+.depoimentos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.depoimentos__titulo {
+    color: var(--vermelho);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.depoimentos__paragrafo {
+    color: var(--cinza-muito-escuro);
+    font-size: 36px;
+    text-align: center;
+}
+
+.depoimentos__nome {
+    color: var(--cinza-muito-escuro);
+}
+
+.depoimentos__cargo {
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 400;
 }
