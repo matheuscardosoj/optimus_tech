@@ -3,10 +3,10 @@
     --branco: #FFFFFF;
     --cor-de-fundo-principal: #FFFFFF;
     --cor-de-fundo-secundaria: #F9FAFB;
-    --cinza-claro: #EAECF0;
-    --cinza: #667085;
-    --ciza-escuro: #3A404E;
-    --cinza-muito-escuro: #101828;
+    --cinza-200: #EAECF0;
+    --cinza-400: #98A2B3;
+    --cinza-500: #667085;
+    --cinza-900: #101828;
     --vermelho: #8E2424;
     --vermelho-escuro-opaco: rgba(142, 36, 36, 0.05);
     --vermelho-muito-opaco: rgba(196, 25, 25, 0.03);;
@@ -30,12 +30,6 @@ html {
     align-items: center;
 }
 
-.cabecalho__titulo {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--ciza-escuro);
-}
-
 .cabecalho__lista {
     column-gap: 32px;
     margin-left: 10%;
@@ -43,7 +37,7 @@ html {
 
 .cabecalho-lista__link {
     text-decoration: none;
-    color: var(--cinza);
+    color: var(--cinza-500);
 }
 
 .cabecalho__botoes {
@@ -53,7 +47,7 @@ html {
 
 .cabecalho-botao__link {
     text-decoration: none;
-    color: var(--cinza);
+    color: var(--cinza-500);
     border: none;
     background: none;
     cursor: pointer;
@@ -79,7 +73,7 @@ html {
 .sobre__titulo {
     font-size: 48px;
     font-weight: 600;
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
     margin: 24px 0 36px;
 }
 
@@ -111,7 +105,7 @@ html {
 .metrica__titulo {
     margin: 12px 0 8px;
     font-size: 18px;
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
 }
 
 .metrica__paragrafo {
@@ -145,14 +139,14 @@ html {
 .talentos__titulo {
     font-weight: 600;
     font-size: 36px;
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
     margin: 16px 0 20px;
 }
 
 .talentos__paragrafo {
     font-weight: 400;
     font-size: 20px;
-    color: var(--cinza);
+    color: var(--cinza-500);
 }
 
 .talentos__imagem {
@@ -173,7 +167,7 @@ html {
 .oportunidade__titulo {
     margin-bottom: 32px;
     font-size: 20px;
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
 }
 
 .oportunidade__lista {
@@ -187,13 +181,13 @@ html {
     flex-direction: column;
     row-gap: 32px;
     padding: 24px 24px 28px;
-    border: 1px solid var(--cinza-claro);
+    border: 1px solid var(--cinza-200);
     border-radius: 16px
 }
 
 .vaga__titulo {
     font-size: 18px;
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
 }
 
 .vaga__informacoes {
@@ -202,11 +196,11 @@ html {
 }
 
 .vaga__informacoes span {
-    color: var(--cinza);
+    color: var(--cinza-500);
 }
 
 .depoimentos {
-    margin: 96px 112px;
+    margin: 96px 112px 0;
     padding: 64px;
     display: flex;
     flex-direction: column;
@@ -229,17 +223,87 @@ html {
 }
 
 .depoimentos__paragrafo {
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
     font-size: 36px;
     text-align: center;
 }
 
 .depoimentos__nome {
-    color: var(--cinza-muito-escuro);
+    color: var(--cinza-900);
 }
 
 .depoimentos__cargo {
-    color: var(--cinza);
+    color: var(--cinza-500);
     font-size: 14px;
+    font-weight: 400;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 32px;
+    margin-top: 96px;
+    padding: 96px 0;
+    background-color: var(--cor-de-fundo-secundaria);
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.rodape__informacoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.rodape__titulo {
+    color: var(--cinza-900);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rodape__paragrafo {
+    color: var(--cinza-500);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rodape__formulario {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.rodape__email {
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px var(--vermelho-escuro-opaco);
+    border-radius: 8px;
+    width: 25vw;
+}
+
+.rodape__email::placeholder {
+    color: var(--cinza-500);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.rodape__botao {
+    background-color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    box-shadow: 0px 1px 2px var(--vermelho-escuro-opaco);
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: var(--branco);
+}  
+
+.rodape__copyrigth {
+    color: var(--cinza-400);
     font-weight: 400;
 }
